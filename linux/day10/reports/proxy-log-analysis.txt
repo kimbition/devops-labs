@@ -1,0 +1,18 @@
+## Log file
+/var/log/nginx/devops-proxy.access.log
+
+## Total requests
+8 /var/log/nginx/devops-proxy.access.log
+
+## Status codes
+      7 200
+      1 502
+
+## Top client IPs
+      8 127.0.0.1
+
+## Top paths
+      8 /
+
+## 4xx/5xx requests
+127.0.0.1 - - [05/May/2026:21:41:44 +0800] "HEAD / HTTP/1.1" 502 0 "-" "curl/8.18.0"
