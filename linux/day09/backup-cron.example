@@ -1,0 +1,2 @@
+# Every day at 02:30, backup day07 directory.
+30 2 * * * /home/yj/devops-labs/scripts/backup.sh /home/yj/devops-labs/linux/day07 /home/yj/devops-labs/backups >> /home/yj/devops-labs/linux/day09/reports/backup-cron.log 2>&1

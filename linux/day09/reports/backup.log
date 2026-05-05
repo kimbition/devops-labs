@@ -1,0 +1,4 @@
+[INFO] backup source: linux/day07
+[INFO] backup target: /home/yj/devops-labs/backups/day07-20260506-010751.tar.gz
+[INFO] cleanup old backups, keep latest 7
+[OK] backup completed
