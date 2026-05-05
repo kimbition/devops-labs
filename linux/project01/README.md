@@ -137,4 +137,3 @@ curl http://127.0.0.1:8089
 ## 健康检查说明
 
 `scripts/health-check.sh` 中的 `127.0.0.1:18081` 是故意保留的失败用例，用来验证脚本能正确返回非零退出码。项目报告中的健康检查只记录实际需要运行的服务。
-bad change for rollback practice
