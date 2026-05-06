@@ -1,0 +1,20 @@
+nginx-1  | 2026/05/06 12:09:27 [notice] 1#1: start worker process 25
+nginx-1  | 2026/05/06 12:09:27 [notice] 1#1: start worker process 26
+nginx-1  | 2026/05/06 12:09:27 [notice] 1#1: start worker process 27
+nginx-1  | 2026/05/06 12:09:27 [notice] 1#1: start worker process 28
+nginx-1  | 2026/05/06 12:09:27 [notice] 1#1: start worker process 29
+nginx-1  | 2026/05/06 12:09:27 [notice] 1#1: start worker process 30
+nginx-1  | 2026/05/06 12:09:27 [notice] 1#1: start worker process 31
+nginx-1  | 2026/05/06 12:09:27 [notice] 1#1: start worker process 32
+nginx-1  | 2026/05/06 12:09:27 [notice] 1#1: start worker process 33
+nginx-1  | 2026/05/06 12:09:27 [notice] 1#1: start worker process 34
+nginx-1  | 2026/05/06 12:09:27 [notice] 1#1: start worker process 35
+nginx-1  | 2026/05/06 12:09:27 [notice] 1#1: start worker process 36
+nginx-1  | 2026/05/06 12:09:27 [notice] 1#1: start worker process 37
+nginx-1  | 2026/05/06 12:09:27 [notice] 1#1: start worker process 38
+nginx-1  | 172.18.0.1 - - [06/May/2026:12:10:06 +0000] "GET / HTTP/1.1" 200 128 "-" "curl/8.18.0"
+nginx-1  | 172.18.0.1 - - [06/May/2026:12:10:13 +0000] "GET /health HTTP/1.1" 200 54 "-" "curl/8.18.0"
+nginx-1  | 2026/05/06 12:12:43 [error] 23#23: *5 connect() failed (113: No route to host) while connecting to upstream, client: 172.18.0.1, server: localhost, request: "HEAD / HTTP/1.1", upstream: "http://172.18.0.2:8000/", host: "127.0.0.1:8093"
+nginx-1  | 172.18.0.1 - - [06/May/2026:12:12:43 +0000] "HEAD / HTTP/1.1" 502 0 "-" "curl/8.18.0"
+nginx-1  | 172.18.0.1 - - [06/May/2026:12:13:18 +0000] "GET /health HTTP/1.1" 200 54 "-" "curl/8.18.0"
+nginx-1  | 172.18.0.1 - - [06/May/2026:12:13:39 +0000] "GET /health HTTP/1.1" 200 54 "-" "curl/8.18.0"

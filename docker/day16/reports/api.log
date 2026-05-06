@@ -1,0 +1,6 @@
+api-1  | listening on 0.0.0.0:8000
+api-1  | 172.18.0.3 - - [06/May/2026 12:10:06] "GET / HTTP/1.1" 200 -
+api-1  | 172.18.0.3 - - [06/May/2026 12:10:13] "GET /health HTTP/1.1" 200 -
+api-1  | listening on 0.0.0.0:8000
+api-1  | 172.18.0.3 - - [06/May/2026 12:13:18] "GET /health HTTP/1.1" 200 -
+api-1  | 172.18.0.3 - - [06/May/2026 12:13:39] "GET /health HTTP/1.1" 200 -
