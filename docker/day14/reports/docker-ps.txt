@@ -1,0 +1,2 @@
+CONTAINER ID   IMAGE                     COMMAND              CREATED         STATUS         PORTS                                                   NAMES
+6e916ea4132f   devops-python-api:0.1.0   "python server.py"   6 minutes ago   Up 6 minutes   8000/tcp, 0.0.0.0:8092->9000/tcp, [::]:8092->9000/tcp   devops-python-api
