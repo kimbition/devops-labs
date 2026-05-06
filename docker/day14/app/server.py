@@ -24,7 +24,7 @@ class Handler(BaseHTTPRequestHandler):
 
         if self.path == "/":
             self._send_json(200, {
-                "message": "hello from docker image",
+                "message": "hello from optimized docker image",
                 "hostname": socket.gethostname(),
                 "time": datetime.now(timezone.utc).isoformat()
             })

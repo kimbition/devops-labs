@@ -1,0 +1,7 @@
+total 24
+drwxr-xr-x 1 root root 4096 May  6 10:16 .
+drwxr-xr-x 1 root root 4096 May  6 10:20 ..
+-rw-r--r-- 1 root root   53 May  6 10:15 .dockerignore
+-rw-r--r-- 1 root root  111 May  6 08:54 Dockerfile
+-rw-r--r-- 1 root root  103 May  6 10:15 Dockerfile.copyall
+-rw-r--r-- 1 root root 1311 May  6 08:53 server.py
