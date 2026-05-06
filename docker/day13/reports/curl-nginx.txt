@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Content-Length: 203
+Accept-Ranges: bytes
+Connection: keep-alive
+Content-Type: text/html
+Date: Wed, 06 May 2026 08:49:46 GMT
+Etag: "69faff69-cb"
+Keep-Alive: timeout=4
+Last-Modified: Wed, 06 May 2026 08:44:25 GMT
+Proxy-Connection: keep-alive
+Server: nginx/1.30.0
+

@@ -1,0 +1,2 @@
+CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS                                     NAMES
+f9ce848d72b6   nginx:stable   "/docker-entrypoint.…"   5 minutes ago   Up 5 minutes   0.0.0.0:8090->80/tcp, [::]:8090->80/tcp   devops-nginx
