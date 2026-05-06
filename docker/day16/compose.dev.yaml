@@ -1,0 +1,10 @@
+services:
+  api:
+    environment:
+      APP_ENV: development
+    volumes:
+      - ../day14/app/server.py:/app/server.py:ro
+
+  nginx:
+    ports:
+      - "8095:80"

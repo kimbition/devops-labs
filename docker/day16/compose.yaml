@@ -8,6 +8,8 @@ services:
       APP_NAME: "${APP_NAME}"
     expose:
       - "${APP_PORT}"
+    volumes:
+      - api-data:/data
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:${APP_PORT}/health')"]
@@ -26,3 +28,6 @@ services:
       api:
         condition: service_healthy
     restart: unless-stopped
+
+volumes:
+  api-data:
