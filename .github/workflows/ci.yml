@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+
+      - name: Shell syntax check
+        run: |
+          bash -n scripts/health-check.sh
+          bash -n scripts/system-check.sh
+          bash -n scripts/backup.sh
+          bash -n scripts/nginx-log-analyzer.sh
+
+      - name: Python syntax check
+        run: |
+          python -m py_compile docker/day14/app/server.py
+
+      - name: Docker build
+        run: |
+          docker build -t devops-python-api:ci docker/day14/app
+
+      - name: Compose config check
+        run: |
+          docker compose -f docker/day16/compose.yaml --env-file docker/day16/.env config

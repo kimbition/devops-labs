@@ -1,0 +1,49 @@
+## Shell syntax check
+
+## Python syntax check
+
+## Docker build
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 DONE 0.0s
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 148B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.14-slim
+#2 DONE 1.2s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 93B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 31B done
+#4 DONE 0.0s
+
+#5 [1/3] FROM docker.io/library/python:3.14-slim@sha256:5b3879b6f3cb77e712644d50262d05a7c146b7312d784a18eff7ff5462e77033
+#5 resolve docker.io/library/python:3.14-slim@sha256:5b3879b6f3cb77e712644d50262d05a7c146b7312d784a18eff7ff5462e77033 0.1s done
+#5 DONE 0.1s
+
+#6 [2/3] WORKDIR /app
+#6 CACHED
+
+#7 [3/3] COPY server.py .
+#7 CACHED
+
+#8 exporting to image
+#8 exporting layers done
+#8 exporting manifest sha256:0317292cfb74cdfb044852b5f22f3a874bbe5e6992653eca9f376f04bfe5304a done
+#8 exporting config sha256:9e11ff073e10ae42b22e9f454c0d19ad1fd5fb4241d707f2ff6b8cb6394ed094 done
+#8 exporting attestation manifest sha256:991d69542cb8e9a98f3a01c3e44e3e86a5909a3e76d2f1967fb984c4d237e865 0.1s done
+#8 exporting manifest list sha256:fd25fa1fcea574ce9ff937546324b51988cb6ca068bdf793ff6fd885f45d3c67
+#8 exporting manifest list sha256:fd25fa1fcea574ce9ff937546324b51988cb6ca068bdf793ff6fd885f45d3c67 0.0s done
+#8 naming to docker.io/library/devops-python-api:ci done
+#8 unpacking to docker.io/library/devops-python-api:ci 0.0s done
+#8 DONE 0.2s
+
+## Compose config check
+
+[OK] local CI checks passed
