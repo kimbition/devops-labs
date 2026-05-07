@@ -1,0 +1,2 @@
+NAME        READY   STATUS    RESTARTS   AGE   IP           NODE                       NOMINATED NODE   READINESS GATES
+nginx-pod   1/1     Running   0          96s   10.244.0.5   devops-lab-control-plane   <none>           <none>

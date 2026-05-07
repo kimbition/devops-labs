@@ -1,0 +1,11 @@
+NAMESPACE            NAME                                               READY   STATUS    RESTARTS   AGE
+devops-lab           nginx-pod                                          1/1     Running   0          96s
+kube-system          coredns-7d764666f9-ft4gq                           1/1     Running   0          8m54s
+kube-system          coredns-7d764666f9-pjp2k                           1/1     Running   0          8m54s
+kube-system          etcd-devops-lab-control-plane                      1/1     Running   0          9m2s
+kube-system          kindnet-d6ndv                                      1/1     Running   0          8m54s
+kube-system          kube-apiserver-devops-lab-control-plane            1/1     Running   0          9m
+kube-system          kube-controller-manager-devops-lab-control-plane   1/1     Running   0          9m
+kube-system          kube-proxy-sk8ds                                   1/1     Running   0          8m54s
+kube-system          kube-scheduler-devops-lab-control-plane            1/1     Running   0          9m2s
+local-path-storage   local-path-provisioner-67b8995b4b-z2lhl            1/1     Running   0          8m54s
