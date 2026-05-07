@@ -35,8 +35,24 @@ jobs:
 
       - name: Docker build
         run: |
-          docker build -t devops-python-api:ci docker/day14/app
+          mkdir -p ci/reports
+          docker build -t devops-python-api:ci docker/day14/app | tee ci/reports/docker-build.log
 
       - name: Compose config check
         run: |
-          docker compose -f docker/day16/compose.yaml --env-file docker/day16/.env config
+          docker compose -f docker/day16/compose.yaml --env-file docker/day16/.env config | tee ci/reports/compose-config.yaml > /dev/null
+
+      - name: Git tracked cache check
+        run: |
+          if git ls-files | grep -E '__pycache__|\.pyc$'; then
+            echo "Python cache files are tracked by Git"
+            exit 1
+          fi
+
+      - name: Upload CI reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ci-reports
+          path: ci/reports/
+          retention-days: 7
